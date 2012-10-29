@@ -39,9 +39,8 @@
 
   $.fn.trackEvent = function(options){
     $(this).click(function(e){
-      e.preventDefault();
       $(this).data('trackEvent', $.trackEvent(this, options));
-    });
+    })
 
     return this;
   }
